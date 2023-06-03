@@ -13,9 +13,10 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-image: url(../images/TASK\ &\ TROVE.png);
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     font-family: 'Roboto', sans-serif;
 }
   img, picture, video, canvas, svg {
@@ -40,7 +41,13 @@
     font-weight: bold;
     margin-top: 1rem;
   }
+  .nav-bar-items {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
 
+  }
+  
   .logo{
     font-size: 4rem;
     cursor:default
@@ -141,4 +148,112 @@
 
   .bg-image{
     width: 850px;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+  .nav-bar{
+    flex-direction: column;
+    font-size: 1.1rem;
+  }
+
+  .nav-bar-items{
+    color: #ccc;
+  }
+  .bg-image{
+    margin-top: -200px;
+    width: 70%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    filter: blur(2px);
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+  .quote{
+    font-size: 45px;
+  }
+  .primary-div{
+    gap: 3rem;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .nav-bar{
+    flex-direction: column;
+    font-size: 1.1rem;
+  }
+
+  .nav-bar-items{
+    color: #ccc;
+  }
+  .bg-image{
+    margin-top: -200px;
+    width: 70%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    filter: blur(2px);
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+  .quote{
+    font-size: 45px;
+  }
+  .primary-div{
+    gap: 3rem;
+  }
+  .name{
+    width: 370px;
+  }
+ }
+
+@media all and (max-width: 480px) { 
+  .nav-bar{
+    flex-direction: column;
+    font-size: 1.1rem;
+    color: #ccc;
+    justify-content: center;
+  }
+  .nav-bar-items{
+    gap: 1.4rem;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .logo{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+  }
+  .quote{
+    font-size: 50px;
+    margin-top: 1rem;
+  }
+
+  .name{
+    width: 340px;
+  }
+  .primary-div{
+    gap: 2rem;
+  }
+  .bg-image{
+    margin-top: -300px;
+    width: 60%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    filter: blur(2px);
+  }
+ 
 }
