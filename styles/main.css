@@ -1,0 +1,98 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+    background-image: url(../images/background/bg-1.webp);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+ul{
+    padding: 0;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+a{
+    background-color: transparent;
+}
+
+.side-bar{
+    height: 100vh;
+    background-color: transparent;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+
+.user{
+    display: flex;
+    align-items: center;
+}
+.user-pp{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-name, #stick-but{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.user-info{
+    display: none;
+    width: 200px;
+    justify-content: space-between;
+}
+.stick{
+    cursor: pointer;
+}
+/*--------Tasks ---------- */
+.tasks{
+    margin-top: 3.5rem;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.day{
+    display: flex;
+    gap: 11px;
+    font-size: 21px;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+.my-day-svg{
+    width: 24px;
+    height: 24px;
+}
