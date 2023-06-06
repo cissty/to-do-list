@@ -1,2 +1,4 @@
-import createSideBar from "./sidebar.js";
+import {createSideBar} from "./sidebar.js";
 createSideBar();
+
+
